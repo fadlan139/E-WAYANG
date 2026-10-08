@@ -2,7 +2,9 @@
 
 **Bima dan Arjuna – Janji di Tengah Hutan**
 
-E-Wayang adalah proyek interaktif berbasis computer vision yang menampilkan wayang kulit digital dengan tokoh Bima dan Arjuna. Aplikasi ini menggunakan MediaPipe hand tracking untuk mengendalikan karakter melalui gerakan tangan, sehingga pengguna dapat berinteraksi dengan cerita secara langsung.
+[![CI](https://github.com/fadlan139/E-WAYANG/actions/workflows/ci.yml/badge.svg)](https://github.com/fadlan139/E-WAYANG/actions/workflows/ci.yml)
+
+E-Wayang adalah proyek interaktif berbasis computer vision yang menampilkan wayang kulit digital dengan tokoh Bima dan Arjuna. Aplikasi ini menggunakan MediaPipe hand tracking untuk mengendalikan karakter dan menyampaikan alur cerita interaktif dengan narasi, musik, dan animasi visual.
 
 ---
 
@@ -131,15 +133,30 @@ Untuk panduan setup langkah demi langkah, silakan lihat file:
 
 ---
 
-## 10. Catatan
+## 10. Status CI
 
-Proyek ini dibuat sebagai bentuk inovasi digital untuk memperkenalkan wayang tradisional ke generasi muda dengan teknologi yang lebih modern. Fokus utama dari aplikasi ini adalah edukasi, hiburan, dan pelestarian budaya Indonesia.
+Status build otomatis untuk repo ini:
+
+[![CI](https://github.com/fadlan139/E-WAYANG/actions/workflows/ci.yml/badge.svg)](https://github.com/fadlan139/E-WAYANG/actions/workflows/ci.yml)
+
+Workflow CI ini memastikan:
+
+- dependency dapat terinstall
+- syntax Python valid
+- linting dasar berjalan
+- test (jika ada) dijalankan secara otomatis
 
 ---
 
-## 11. Penutup
+## 11. Catatan
 
-E-Wayang adalah proyek yang menggabungkan seni budaya, teknologi, dan interaksi manusia dalam satu pengalaman digital yang menarik. Proyek ini cocok untuk digunakan sebagai media pembelajaran, presentasi, atau demonstrasi inovasi berbasis budaya.
+Proyek ini dibuat sebagai bentuk inovasi digital untuk memperkenalkan wayang tradisional ke generasi muda dengan teknologi yang lebih modern. Fokus utama dari aplikasi ini adalah edukasi, hiburan, dan pelestarian budaya Indonesia melalui pengalaman interaktif.
+
+---
+
+## 12. Penutup
+
+E-Wayang adalah proyek yang menggabungkan seni budaya, teknologi, dan interaksi manusia dalam satu pengalaman digital yang menarik. Proyek ini cocok untuk digunakan sebagai media pembelajaran, presentasi, hiburan edukatif, dan promosi budaya bangsa.
 
 **Lestarikan Wayang, Lestarikan Budaya!**
 
