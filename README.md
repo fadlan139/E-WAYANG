@@ -1,68 +1,148 @@
-# Bima dan Arjuna – Janji di Tengah Hutan
-## FIX16 – Sinkronisasi audio, teks, dan urutan adegan
+# E-Wayang: Program Wayang Kulit Digital Interaktif
 
-Versi ini dibuat dari program FIX15 yang kamu kirim dan memperbaiki bug yang terlihat pada rekaman.
+**Bima dan Arjuna – Janji di Tengah Hutan**
 
-### Perbaikan utama
-- Setiap dialog memakai **timer audio sendiri**. Timer dialog sebelumnya tidak lagi diwariskan ke dialog berikutnya.
-- Program tidak boleh menganggap dialog selesai sebelum file voice yang sedang diputar benar-benar selesai.
-- `SPACE` tidak lagi dapat memotong atau melewati voice yang sedang berjalan.
-- Tombol `N` yang sebelumnya berpotensi melewati bagian cerita sekarang dinonaktifkan.
-- Semua dialog tetap otomatis lanjut **satu per satu** setelah audio selesai.
-- Urutan 5 adegan dikunci: narasi → seluruh dialog → transisi → adegan berikutnya.
-- Narasi pembukaan, jeda, narasi adegan, akhir cerita, pesan moral, dan penutup memakai durasi MP3 asli.
-- Teks narator menggunakan **cross-fade halus antar kalimat**, bukan pergantian teks mendadak.
-- Pembukaan memakai timeline kalimat berdasarkan jumlah kata sehingga pergantian teks mengikuti progres voice.
-- Setelah voice selesai, teks tidak langsung dipotong.
-- Ditambahkan validasi awal untuk memastikan semua file audio, background, dan format dialog tersedia sebelum cerita dimulai.
-- Tracking kamera/MediaPipe tetap terisolasi dari alur cerita agar error kamera tidak memutus cerita.
-- Judul tetap menggunakan efek layar menggelap + fade/zoom.
-- Ending tetap: Bima dan Arjuna menjauh → musik → fade gelap → pesan moral akhir → TAMAT.
+E-Wayang adalah proyek interaktif berbasis computer vision yang menampilkan wayang kulit digital dengan tokoh Bima dan Arjuna. Aplikasi ini menggunakan MediaPipe hand tracking untuk mengendalikan karakter melalui gerakan tangan, sehingga pengguna dapat berinteraksi dengan cerita secara langsung.
 
-### Urutan cerita
+---
+
+## 1. Deskripsi Proyek
+
+Proyek ini dibuat untuk melestarikan budaya wayang Indonesia dengan pendekatan modern. Pengguna dapat:
+
+- Menggerakkan wayang menggunakan tangan
+- Menikmati alur cerita interaktif Bima dan Arjuna
+- Menonton narasi, dialog, dan musik yang sudah dibuat secara khusus
+- Berpartisipasi dalam mode kuis dan pilihan karakter
+- Menjalankan aplikasi dalam mode presentasi/proyektor
+
+---
+
+## 2. Fitur Utama
+
+- Hand tracking menggunakan MediaPipe
+- Mode cerita interaktif "Bima dan Arjuna – Janji di Tengah Hutan"
+- Pilihan karakter wayang (Bima, Arjuna, Semar, Kapi Angeni, dll.)
+- Sinkronisasi audio, subtitle, dan visual
+- Mode fullscreen dan projector untuk presentasi
+- Dapat dijalankan di Windows, macOS, dan Linux
+
+---
+
+## 3. Teknologi yang Digunakan
+
+- Python 3.11+
+- Pygame
+- MediaPipe
+- OpenCV
+- NumPy
+
+---
+
+## 4. Struktur Folder
+
+```text
+E-WAYANG/
+├── main.py
+├── make_rig.py
+├── preview_rig.py
+├── rigmath.py
+├── requirements.txt
+├── environment.yml
+├── config.json
+├── story.json
+├── README.md
+├── SETUP.md
+├── run.bat
+├── run_debug.bat
+├── run_projector.bat
+├── assets/
+├── audio/
+├── .gitignore
+├── *.png
+├── *.jpg
+├── *.mp3
+└── *.json
+```
+
+---
+
+## 5. Persyaratan Sistem
+
+- Python 3.11 atau lebih baru
+- Kamera webcam / built-in camera
+- Minimal RAM 4 GB
+- Speaker atau headphone
+- Windows 10+, macOS, atau Linux
+
+---
+
+## 6. Cara Menjalankan
+
+### 6.1 Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 6.2 Jalankan aplikasi
+
+Windows:
+```bash
+run.bat
+```
+
+Mac/Linux:
+```bash
+python main.py
+```
+
+---
+
+## 7. Kontrol Aplikasi
+
+| Tombol | Fungsi |
+|--------|--------|
+| `SPACE` | Lanjut ke dialog atau adegan berikutnya |
+| `F11` | Fullscreen |
+| `P` | Mode projector |
+| `ESC` | Keluar dari aplikasi |
+
+---
+
+## 8. Alur Cerita
+
 1. Pembukaan
-2. Jeda
-3. Kalimat pengantar
-4. Judul
-5. Adegan 1
-6. Adegan 2
-7. Adegan 3
-8. Adegan 4
-9. Adegan 5
-10. Akhir cerita
-11. Pesan moral
-12. Kalimat penutup
-13. Ending
+2. Jeda dan pengantar
+3. Judul cerita
+4. Adegan 1 sampai 5
+5. Akhir cerita
+6. Pesan moral
+7. Penutup
+8. Kuis penonton
 
-### Kontrol
-- `SPACE` = lanjut ke dialog berikutnya **setelah voice selesai**
-- `F11` = fullscreen
-- `P` = mode projector
-- `ESC` = keluar
+---
 
-Tidak ada tombol skip otomatis untuk narasi/dialog agar suara tidak terlewat.
+## 9. Panduan Instalasi Detail
 
-### Menjalankan
-Jalankan `run.bat` dari folder `wayang_bima_arjuna_final`.
+Untuk panduan setup langkah demi langkah, silakan lihat file:
 
-Atau:
-`& "C:\Users\labta\AppData\Local\Programs\Python\Python311\python.exe" main.py`
+- [SETUP.md](SETUP.md)
 
-Sebelum cerita dimulai terminal akan menampilkan:
-`[CHECK] Semua audio, dialog, dan background ditemukan.`
+---
 
-Kemudian setiap bagian akan dicatat, misalnya:
-`[NARRATION] Adegan 1 mulai: 07_adegan1.mp3`
-`[DIALOGUE] Adegan 1 | Bima: ...`
-`[DIALOGUE] Adegan 1 | Arjuna: ...`
-`[SCENE] Masuk adegan 2`
+## 10. Catatan
 
-Jika ada masalah lagi, screenshot terminal dengan log tersebut akan menunjukkan tepat bagian yang bermasalah.
+Proyek ini dibuat sebagai bentuk inovasi digital untuk memperkenalkan wayang tradisional ke generasi muda dengan teknologi yang lebih modern. Fokus utama dari aplikasi ini adalah edukasi, hiburan, dan pelestarian budaya Indonesia.
 
+---
 
-## FIX28 - Karakter tambahan
-- Menambahkan Semar (`assets/semar.png`).
-- Menambahkan Kapi Angeni (`assets/kapi_angeni.png`).
-- Pilih Karakter sekarang mendukung 5 karakter.
-- Gesture Attack memakai karakter yang dipilih di slot kiri/kanan.
-- Mode Story tetap menggunakan alur Bima dan Arjuna yang sudah dibuat.
+## 11. Penutup
+
+E-Wayang adalah proyek yang menggabungkan seni budaya, teknologi, dan interaksi manusia dalam satu pengalaman digital yang menarik. Proyek ini cocok untuk digunakan sebagai media pembelajaran, presentasi, atau demonstrasi inovasi berbasis budaya.
+
+**Lestarikan Wayang, Lestarikan Budaya!**
+
+---
+
+*Dibuat untuk kebutuhan pengumpulan tugas / presentasi.*
