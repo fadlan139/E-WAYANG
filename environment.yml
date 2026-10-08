@@ -1,0 +1,14 @@
+name: e-wayang
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - pygame==2.6.1
+      - mediapipe==0.10.21
+      - numpy==1.26.4
+      - opencv-contrib-python==4.11.0.86
+      - flake8
+      - pytest
