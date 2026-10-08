@@ -1,0 +1,73 @@
+{
+  "title": "Bima dan Arjuna – Janji di Tengah Hutan",
+  "scenes": [
+    {
+      "id": 1,
+      "title": "DI TENGAH HUTAN",
+      "background": "hutan_sore",
+      "narration": "07_adegan1.mp3",
+      "dialogues": [
+        ["Bima", "Arjuna, perjalanan kita masih jauh. Sebaiknya kita berhenti sebentar untuk beristirahat.", "bima_01.mp3"],
+        ["Arjuna", "Benar, Bima. Tetapi kita harus tetap berhati-hati. Hutan ini sangat luas.", "arjuna_01.mp3"],
+        ["Bima", "Jangan khawatir. Selama kita bersama, kita pasti bisa menemukan jalan pulang.", "bima_02.mp3"]
+      ],
+      "narration_text": "Pada suatu sore, Bima dan Arjuna sedang berjalan melewati sebuah hutan yang luas. Mereka telah menempuh perjalanan yang cukup jauh dan mulai merasa lelah."
+    },
+    {
+      "id": 2,
+      "title": "MENEMUKAN JALAN BERCABANG",
+      "background": "persimpangan",
+      "narration": "08_adegan2.mp3",
+      "dialogues": [
+        ["Bima", "Kita lewat jalan sebelah kiri saja. Jalannya terlihat lebih mudah.", "bima_03.mp3"],
+        ["Arjuna", "Jangan terburu-buru, Bima. Kita tidak tahu apakah jalan itu benar.", "arjuna_02.mp3"],
+        ["Bima", "Aku yakin jalan itu akan membawa kita keluar dari hutan.", "bima_04.mp3"],
+        ["Arjuna", "Keyakinan itu baik, tetapi kita juga harus menggunakan akal.", "arjuna_03.mp3"],
+        ["Bima", "Baiklah. Menurutmu, apa yang harus kita lakukan?", "bima_05.mp3"]
+      ],
+      "narration_text": "Setelah berjalan cukup lama, mereka tiba di sebuah persimpangan. Di hadapan mereka terdapat dua jalan yang berbeda. Bima dan Arjuna mulai mempertimbangkan jalan mana yang harus mereka pilih. Namun, keduanya memiliki pendapat yang berbeda."
+    },
+    {
+      "id": 3,
+      "title": "PERBEDAAN PENDAPAT",
+      "background": "persimpangan",
+      "narration": "09_adegan3.mp3",
+      "dialogues": [
+        ["Bima", "Aku tetap memilih jalan kiri.", "bima_06.mp3"],
+        ["Arjuna", "Sedangkan aku memilih jalan kanan.", "arjuna_04.mp3"],
+        ["Bima", "Kalau begitu, bagaimana kita menentukan jalan yang benar?", "bima_07.mp3"],
+        ["Arjuna", "Kita tidak perlu bertengkar hanya karena berbeda pendapat.", "arjuna_05.mp3"],
+        ["Bima", "Benar. Lalu bagaimana?", "bima_08.mp3"],
+        ["Arjuna", "Kita cari petunjuk bersama.", "arjuna_06.mp3"]
+      ],
+      "narration_text": "Bima merasa bahwa jalan di sebelah kiri adalah pilihan yang tepat. Sementara itu, Arjuna memilih jalan yang berbeda. Meskipun memiliki pendapat yang berbeda, mereka tidak ingin bertengkar. Arjuna kemudian mengajak Bima untuk mencari petunjuk di sekitar mereka."
+    },
+    {
+      "id": 4,
+      "title": "MENEMUKAN PETUNJUK",
+      "background": "jejak_kaki",
+      "narration": "10_adegan4.mp3",
+      "dialogues": [
+        ["Bima", "Lihat, Arjuna! Ada jejak kaki.", "bima_09.mp3"],
+        ["Arjuna", "Benar. Jejak itu mengarah ke jalan kanan.", "arjuna_07.mp3"],
+        ["Bima", "Berarti pilihanmu benar.", "bima_10.mp3"],
+        ["Arjuna", "Yang penting bukan siapa yang benar atau salah. Yang penting kita mau mencari jawaban bersama.", "arjuna_08.mp3"],
+        ["Bima", "Ha ha ha! Benar juga. Aku belajar sesuatu hari ini.", "bima_11.mp3"]
+      ],
+      "narration_text": "Bima dan Arjuna mengamati keadaan di sekitar persimpangan dengan teliti. Tak lama kemudian, mereka menemukan jejak kaki di tanah. Jejak tersebut mengarah ke salah satu jalan. Setelah memperhatikan jejak itu, mereka menyadari bahwa jalan tersebut kemungkinan merupakan jalan yang benar. Bima pun menyadari bahwa mengambil keputusan dengan terburu-buru bukanlah pilihan yang tepat."
+    },
+    {
+      "id": 5,
+      "title": "JANJI PERSAHABATAN",
+      "background": "hutan_sore",
+      "narration": "11_adegan5.mp3",
+      "dialogues": [
+        ["Bima", "Arjuna, aku berjanji tidak akan terburu-buru mengambil keputusan lagi.", "bima_12.mp3"],
+        ["Arjuna", "Dan aku berjanji akan selalu mendengarkan pendapatmu.", "arjuna_09.mp3"],
+        ["Bima", "Kalau begitu, kita akan selalu berjalan bersama.", "bima_13.mp3"],
+        ["Arjuna", "Ya. Karena sahabat yang baik bukanlah yang selalu memiliki pendapat yang sama, tetapi yang mau saling menghargai.", "arjuna_10.mp3"]
+      ],
+      "narration_text": "Bima dan Arjuna akhirnya melanjutkan perjalanan melalui jalan yang telah mereka pilih bersama. Dari perjalanan tersebut, mereka belajar bahwa perbedaan pendapat bukanlah alasan untuk bertengkar. Dengan keberanian, kebijaksanaan, dan kerja sama, mereka dapat menghadapi berbagai kesulitan. Bima dan Arjuna kemudian melanjutkan perjalanan dengan hati yang tenang, sambil menjaga janji untuk selalu saling menghargai dan membantu."
+    }
+  ]
+}

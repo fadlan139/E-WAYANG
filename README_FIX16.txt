@@ -58,11 +58,3 @@ Kemudian setiap bagian akan dicatat, misalnya:
 `[SCENE] Masuk adegan 2`
 
 Jika ada masalah lagi, screenshot terminal dengan log tersebut akan menunjukkan tepat bagian yang bermasalah.
-
-
-## FIX28 - Karakter tambahan
-- Menambahkan Semar (`assets/semar.png`).
-- Menambahkan Kapi Angeni (`assets/kapi_angeni.png`).
-- Pilih Karakter sekarang mendukung 5 karakter.
-- Gesture Attack memakai karakter yang dipilih di slot kiri/kanan.
-- Mode Story tetap menggunakan alur Bima dan Arjuna yang sudah dibuat.

@@ -1,0 +1,35 @@
+{
+  "window": {
+    "width": 1280,
+    "height": 720,
+    "camera_index": 0,
+    "show_camera": false,
+    "show_pov": true
+  },
+  "puppet": {
+    "target_height": 420,
+    "left_start_x": 455,
+    "left_start_y": 475,
+    "right_start_x": 825,
+    "right_start_y": 475,
+    "left_offset_x": -15,
+    "left_offset_y": 0,
+    "right_offset_x": 15,
+    "right_offset_y": 0,
+    "smooth": 0.2
+  },
+  "gesture": {
+    "required_frames": 6
+  },
+  "dialogue": {
+    "seconds_per_line": 5.5
+  },
+  "rig": {
+    "enabled": true,
+    "arm_driver": "thumb",
+    "rods": true,
+    "arm_smooth": 0.35,
+    "roll_gain": 0.35,
+    "sway_gain": 0.25
+  }
+}
